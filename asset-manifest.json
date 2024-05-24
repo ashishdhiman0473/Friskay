@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Friskay/static/css/main.717bd4a5.css",
+    "main.js": "/Friskay/static/js/main.d506cdca.js",
+    "static/js/453.d6eadb1f.chunk.js": "/Friskay/static/js/453.d6eadb1f.chunk.js",
+    "index.html": "/Friskay/index.html",
+    "main.717bd4a5.css.map": "/Friskay/static/css/main.717bd4a5.css.map",
+    "main.d506cdca.js.map": "/Friskay/static/js/main.d506cdca.js.map",
+    "453.d6eadb1f.chunk.js.map": "/Friskay/static/js/453.d6eadb1f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.717bd4a5.css",
+    "static/js/main.d506cdca.js"
+  ]
+}
