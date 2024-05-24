@@ -1,38 +1,256 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Niconne&display=swap');
+
+*{
+  margin:0;
+  max-width:1920vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #fffbf3;
+  font-family: sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  display:flex;
+  gap:55px;
+  margin-top: 55px;
+  width:1450px;
+  position:absolute;
+  margin-left: 86px;
+  text-align: center; 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Nav-H{
+  font-size:33px;
+  font-family:'Reggae One', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 14px;
+  font-weight:400;
+}
+.vertical{
+  margin-top:-7px;
+  height:30px;
+  border:solid rgb(165, 165, 165) 1.5px; 
+}
+.Nav-p{
+  font-size:20px;
+}
+.Nav-items{
+  font-weight: 900;
+  font-size:16px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:71px;
+  list-style: none;
+  margin-left:520px;
+}
+.hero-hd1{
+  position:absolute;
+  margin-top:230px;
+  margin-left:82px;
+  font-size:65px;
+  font-family:'Inter';
+  font-weight: 800;
+}
+.B{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight:bolder;
+  /* border:30px solid;
+  outline: 10px double #fff;
+  outline-offset:-18px;
+  border-image:linear-gradient(220.55deg, #FFF500 0%, #FF00B8 100%);
+  border-image-slice:1%;
+  font-family:'Reggae One', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+.hero-hd2{
+  position:absolute;
+  margin-top:300px;
+  margin-left:86px;
+  font-size:70px;
+  font-family:'Inter';
+  font-weight: 800;
+}
+.hero-p{
+  position:absolute;
+  margin-top:400px;
+  margin-left:82px;
+  font-size:19px;
+  line-height:27px;
+  font-family:'Inter';
+  font-weight: 500; 
+}
+.btn{
+  background:#ffa800;
+  border:1px;
+  border-radius:12px;
+  padding:17px 30px;
+  color:#000000;
+  display:inline-block;
+  font:800  28px/1 "Inter",  sans-serif;
+  text-align:center;
+  margin-top:550px;
+  margin-left:82px;
+}
+.btn:hover{
+  opacity:0.7;
 }
 
-.App-link {
-  color: #61dafb;
+.cat{
+  width: 25%;
+  position: absolute;
+  margin-top:200px;
+  margin-left:970px;
+  animation-name: cat-move;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
 }
+/* Animation for cat */
+@keyframes cat-move{
+  0%{
+    left:22px;
+    top:23px;
+    right:12px;
+  }
+  25%{
+    left:-12px;
+    top:-23px;
+    right: -12px;
+  }
+  50%{
+    left:22px;
+    top:23px;
+    right:12px;
+  }
+  100%{
+    left:-12px;
+    top:-23px;
+    right: -12px;
+  }
+}
+.page2{
+  text-align: center;
+  margin-top:215px;
+}
+.Vet-text{
+  font-size: 7vh;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+}
+.walk{
+  margin-top:310px;
+  height:15vh;
+}
+.Man{
+  position: relative;
+  width:100vh;
+  margin-top:-440px;
+}
+.grid-container{
+  margin-top:30px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 80px;
+  gap:100px;
+}
+.apostro{
+  margin:0 0 20px -30px;
+  height:3vh;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.grid-item{
+  font-family:'Inter',sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.profile, .grid-name{
+  margin-top:45px;
+}
+.inner-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-name{
+  margin-left:-45px;
+}
+.grid-nm-hd{
+  font-weight: 900;
+  font-size:20px;
+}
+.grid-sm-name{
+  font-size: 12px;
+}
+.para{
+  font-size:20px;
+}
+.fact-box{
+  margin-top:100px;
+  background-color: #E89058;
+  width:1687px;
+  height:800px;
+}
+.bowl{
+  margin-left:580px;
+  width:450px;
+  margin-top:-120px;
+}
+.facts1{
+  width:65vh;
+  position: relative;
+  margin-left:150px;
+  margin-top:150px;
+}
+.facts2{
+  width:65vh;
+  position: absolute;
+  margin-left:350px;
+  margin-top:150px;  
+}
+.last-pg{
+  background-color:#fffbf3;
+  height:50vh;
+  margin-top:200px;
+}
+.brand-nm{
+  font-size:33px;
+  font-family:'Reggae One', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 14px;
+  font-weight:400;
+  text-align: center;
+  margin-left:45px;
+  /* text-align:right; */
+}
+.last-grid{
+  display: grid;
+  grid-template-columns: auto auto;
+  text-align:center;
+  margin-left:-300px;
+  margin-top:-70px
+}
+.last-grid-row{
+  font-family:'Inter', sans-serif;
+  font-size:60px;
+  font-weight: 700;
+  text-align: right;
+  margin-top:100px;
+}
+.last-btn{
+  position: relative;
+  margin-top:100px;
+  background:#ffa800;
+  border:1px;
+  border-radius:12px;
+  padding:16px 22px;
+  color:#000000;
+  display:inline-block;
+  font:800  30px/1 "Inter",  sans-serif;
+  text-align:center;
+  margin-left:-300px;
+  margin-top:150px;
+}
+.last-btn:hover{
+  opacity:0.7;
+  cursor: pointer;
+}
+.foot{
+  background-color:#fdd17e;
+  height:150px;
 }
